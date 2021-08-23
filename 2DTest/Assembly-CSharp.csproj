@@ -53,18 +53,49 @@
     <UnityVersion>2020.3.15f2</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Character\Scripts\Creational\GreenMageWalkActionCommandFactory.cs" />
-    <Compile Include="Assets\Character\Scripts\Command\GreenMageWalkCommand.cs" />
-    <Compile Include="Assets\Character\Scripts\Input\GreenMagePlayerInput.cs" />
-    <Compile Include="Assets\Character\Scripts\Collision\CollisionGreenMageStageBoundary.cs" />
-    <Compile Include="Assets\Character\Scripts\Action\GreenMageAction.cs" />
-    <Compile Include="Assets\Character\Scripts\Command\GreenMageActionCommand.cs" />
-    <Compile Include="Assets\Character\Scripts\Action\GreenMageRootAction.cs" />
-    <Compile Include="Assets\NewBehaviourScript.cs" />
-    <Compile Include="Assets\Character\Scripts\State\GreenMageActionState.cs" />
-    <Compile Include="Assets\Character\Scripts\Action\GreenMageWalkAction.cs" />
-    <Compile Include="Assets\Character\Scripts\State\GreenMageStateMachine.cs" />
-    <Compile Include="Assets\Character\Scripts\Creational\GreenMageActionCommandFactory.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Input\GreenMageBasicMagicAttackActionPlayerInput.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Action\GreenMageBasicMagicAttackAction.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Action\GreenMageJumpDownAction.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Command\GreenMageWalkCommand.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\UI\UIGreenMageActionState.cs" />
+    <Compile Include="Assets\Scripts\Scene\TitleScene\TitleSceneManager.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Action\GreenMageAction.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Action\GreenMageJumpUpAction.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Input\GreenMagePlayerInput.cs" />
+    <Compile Include="Assets\Scripts\Character\Ghost\GhostPlayerController.cs" />
+    <Compile Include="Assets\Scripts\Bridge\Collision\CollisionBridgeGreenMage.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Command\GreenMageJumpDownCommand.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Input\GreenMageWalkActionPlayerInput.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Action\GreenMageActionable.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Command\GreenMageActionCommand.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Command\GreenMageChangeStateCommand.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Input\GreenMageIdleActionPlayerInput.cs" />
+    <Compile Include="Assets\Scripts\Scene\SampleScene\SampleSceneManager.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Input\GreenMageJumpUpActionPlayerInput.cs" />
+    <Compile Include="Assets\Scripts\Terrain\Collision\CollisionGroundGreenMage.cs" />
+    <Compile Include="Assets\Scripts\Character\Lich\LichPlayerController.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Command\GreenMageJumpUpCommand.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Command\GreenMageBasicMagicAttackCommand.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Input\GreenMageJumpDownActionPlayerInput.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Action\GreenMageRootAction.cs" />
+    <Compile Include="Assets\Scripts\Bridge\Bridge.cs" />
+    <Compile Include="Assets\Scripts\Mage\MageSpritePack.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\State\GreenMageActionState.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Action\GreenMageIdleAction.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Input\GreenMageActionPlayerInput.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Action\GreenMageWalkAction.cs" />
+    <Compile Include="Assets\Scripts\Mage\MageSpriteController.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Command\GreenMageIdleCommand.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\State\GreenMageStateMachine.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Action\GreenMageBasicMagicAttackReserveAction.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Command\GreenMageBasicMagicAttackReserveCommand.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Input\GreenMageBasicMagicAttackReserveActionPlayerInput.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Action\GreenMageBasicMagicAttackChargeAction.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Command\GreenMageBasicMagicAttackChargeCommand.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Input\GreenMageBasicMagicAttackChargeActionPlayerInput.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Action\GreenMageBasicMagicChargeAttackAction.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Command\GreenMageBasicMagicChargeAttackCommand.cs" />
+    <Compile Include="Assets\Scripts\Character\GreenMage\Input\GreenMageBasicMagicChargeAttackActionPlayerInput.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -699,6 +730,12 @@
     </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
